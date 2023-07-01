@@ -48,14 +48,14 @@ Private Const FILE_FLAG_OVERLAPPED         As Long = &H40000000
 Private Const FILE_FLAG_WRITE_THROUGH      As Long = &H80000000
 
 
-Private Const SecurityAnonymous As Long = 1
-Private Const SecurityIdentification As Long = 2
-Private Const SECURITY_ANONYMOUS As Long = (SecurityAnonymous * 2 ^ 16)
+Private Const SecurityAnonymous         As Long = 1
+Private Const SecurityIdentification    As Long = 2
+Private Const SECURITY_ANONYMOUS        As Long = (SecurityAnonymous * 2 ^ 16)
 Private Const SECURITY_CONTEXT_TRACKING As Long = &H40000
-'Private Const SECURITY_DELEGATION As Long = (SecurityDelegation * 2 ^ 16)
-Private Const SECURITY_EFFECTIVE_ONLY As Long = &H80000
-Private Const SECURITY_IDENTIFICATION As Long = (SecurityIdentification * 2 ^ 16)
-'Private Const SECURITY_IMPERSONATION As Long = (SecurityImpersonation * 2 ^ 16)
+'Private Const SECURITY_DELEGATION       As Long = (SecurityDelegation * 2 ^ 16)
+Private Const SECURITY_EFFECTIVE_ONLY   As Long = &H80000
+Private Const SECURITY_IDENTIFICATION   As Long = (SecurityIdentification * 2 ^ 16)
+'Private Const SECURITY_IMPERSONATION    As Long = (SecurityImpersonation * 2 ^ 16)
 
 'Private Const INVALID_HANDLE_VALUE As Long = ((Handle) - 1)
 Private Declare Function CreateFile Lib "kernel32.dll" Alias "CreateFileA" ( _
@@ -92,8 +92,8 @@ Public Property Let Name(ByVal Value As String)
     
 End Property
 
-Public Property Get Handle() As Long
-    Handle = m_hnd
+Public Property Get handle() As Long
+    handle = m_hnd
 End Property
 
 Private Sub Class_Terminate()

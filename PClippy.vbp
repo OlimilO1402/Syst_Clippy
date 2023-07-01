@@ -1,10 +1,11 @@
 Type=Exe
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\SysWow64\stdole2.tlb#OLE Automation
 Form=Forms\Form1.frm
 Class=CClipBoard; Classes\Clippy.cls
 Class=FileH; Classes\FileH.cls
 Module=MBitmap; Modules\MBitmap.bas
 ResFile32="Resources\MyRes.res"
+Module=Module1; Modules\MCBCopyFiles.bas
 IconForm="Form1"
 Startup="Form1"
 HelpFile=""
